@@ -8,7 +8,7 @@ Return true if it is possible to traverse between all such pairs of indices, or 
 '''
 
 class Solution:
-    def canTraverseAllPairs(self, nums: List[int]) -> bool:
+    def canTraverseAllPairs(self, nums: list[int]) -> bool:
         if len(nums) == 1:
             return True
         n = len(nums)
@@ -35,7 +35,7 @@ class Solution:
 
         return True
 
-    def factorsCalculator(self, n: int) -> List[int]:
+    def factorsCalculator(self, n: int) -> list[int]:
         dp = list(range(n + 2))
         for i in range(2, n + 1):
             if dp[i] == i:
@@ -44,13 +44,13 @@ class Solution:
                         dp[j] = i
         return dp
 
-    def find(self, parent: List[int], a: int) -> int:
+    def find(self, parent: list[int], a: int) -> int:
         if parent[a] == a:
             return a
         parent[a] = self.find(parent, parent[a])
         return parent[a]
 
-    def union(self, parent: List[int], rank: List[int], a: int, b: int) -> None:
+    def union(self, parent: list[int], rank: list[int], a: int, b: int) -> None:
         a = self.find(parent, a)
         b = self.find(parent, b)
         if a == b:
