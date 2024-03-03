@@ -54,8 +54,13 @@ public:
 
 };
 
-Time Complexity :
-Space Complexity: 
+
+
+// Time Complexity : O(N)
+// Space Complexity: O(1)
+
+
+
 
 
 /**
@@ -97,3 +102,8 @@ public:
             return head;
         }
 };
+
+
+
+// Time Complexity: O(N)
+// Space Complexity: O(1)
