@@ -6,7 +6,7 @@ A subarray is a contiguous part of an array.
 '''
 
 class Solution:
-    def subarraysWithKDistinct(self, nums: List[int], k: int) -> int:
+    def subarraysWithKDistinct(self, nums: list[int], k: int) -> int:
         def goodLessEqualK(nums, k):
             dist=0
             freq=[0]*20001

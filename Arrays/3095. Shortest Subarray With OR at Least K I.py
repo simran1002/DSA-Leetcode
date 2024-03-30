@@ -5,7 +5,7 @@ Return the length of the shortest special non-empty subarray of nums, or return 
 '''
 
 class Solution:
-    def minimumSubarrayLength(self, nums: List[int], k: int) -> int:
+    def minimumSubarrayLength(self, nums: list[int], k: int) -> int:
         n = len(nums)
         min_length = float('inf')
         for i in range(n):
