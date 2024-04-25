@@ -1,7 +1,5 @@
 class Solution:
     def longestIdealString(self, s: str, k: int) -> int:
-
-
         l = [0] * 128
         for c in s:
             i = ord(c)
