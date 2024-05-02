@@ -1,8 +1,7 @@
 class Solution:
     def findMaxK(self, nums: List[int]) -> int:
-        res = -1
-        nums = set(nums)
-        for num in nums:
-            if num * -1 in nums:
-                res = max(res, num)
-        return res
+        nums.sort()
+        for i in range(len(nums)-1,0,-1):
+            if nums[i]*-1 in nums:
+                return nums[i]
+        return -1
