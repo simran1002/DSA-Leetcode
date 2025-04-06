@@ -1,6 +1,6 @@
 class Solution:
     def largestDivisibleSubset(self, nums):
-        # Step 1: Sort the numbers so that divisors come before their multiples
+       
         nums.sort()
         n = len(nums)
 
