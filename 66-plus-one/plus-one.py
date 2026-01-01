@@ -10,10 +10,3 @@ class Solution:
             result.append(num)
             number = number//10
         return result[::-1]
-
-        # if digits[-1] == 9:
-        #     digits[-1]=1
-        #     digits.append(0)
-        # else:
-        #     digits[-1]+=1
-        # return digits
